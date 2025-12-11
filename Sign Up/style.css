@@ -1,0 +1,112 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: "Geom", sans-serif;
+  height: 100vh;
+}
+.wrapper{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 100vh;
+}
+.wrapper img{
+  width: 50px;
+  height: 50px;
+}
+.left-section h1{
+  text-align: center;
+}
+.left-section{
+  width: 40%;
+  height: 100vh;
+  color: #f1f3e0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  background: linear-gradient(to bottom, #D2DCB6 0%,#A1BC98 50%,#778873 100%);
+}
+.left-section img{
+  transition: transform 0.25s ease;
+  filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.15));
+}
+.left-section img:hover{
+  transform: translateY(-3px);
+  cursor: pointer;
+}
+.right-section{
+  color:#778873;
+  width: 60%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f1f3e0;
+}
+.right-section h2{
+  width: 200px;
+  text-align: center;
+  margin-bottom: 25px;
+}
+.right-section img{
+  transition: transform 0.25s ease;
+  filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.15));
+}
+.right-section img:hover{
+  transform: translateY(-3px);
+  cursor: pointer;
+}
+.signup-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.signup-container input{
+  display: flex;
+  flex-direction: column;
+  height: 39px;
+  width: 200px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #778873;
+  padding-left: 7px;
+}
+.signup-container button{
+height: 40px;
+ width: 75px;
+ background: #778873;
+ border: none;
+ border-radius: 10px;
+ font-family: "Geom",sans-serif;
+ font-size: 15px;
+ color: white;
+ margin-top: 15px;
+ margin-bottom: 20px;
+ cursor: pointer;
+ transition: transform 0.25s ease, opacity 0.2s;
+}
+.signup-container button:hover{
+  transform: scale(1.06);
+  opacity: 0.8;
+}
+.signup-container button:active{
+  transform: scale(0.98);
+  opacity: 0.5;
+}
+.right-section a{
+  color: #778873;
+}
+.footer{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background-color: #778873;
+  color: #f1f3e0;
+}

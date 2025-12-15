@@ -5,14 +5,22 @@
 }
 
 body{
-  font-family: "Geom", sans-serif;
-  height: 100vh;
+  font-family: "Bubbler One", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: gainsboro;
 }
 .wrapper{
   display: flex;
-  flex-direction: row;
-  height: 100vh;
-  align-items: center;
+  width: 850px;
+  height: 582px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.08);
+  margin-left: 50px;
+  margin-right: 50px;
 }
 .left-section img{
   width: 50px;
@@ -28,15 +36,14 @@ body{
   text-align: center;
 }
 .left-section{
-  width: 40%;
-  height: 100vh;
-  color: #F1B4B4;
+  width: 45%;
+  color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 40px;
-  background: linear-gradient(to bottom, #fcf8f8 0%,#fbefef 50%,#f9dfdf 100%);
+  background: linear-gradient(to bottom, #222831 0%,#393e46 50%,#222831 100%);
 }
 .right-section img{
   width: 50px;
@@ -54,14 +61,13 @@ body{
   margin-bottom: 25px;
 }
 .right-section{
-  color:#F1B4B4;
-  width: 60%;
-  height: 100vh;
+  color:#222831;
+  width: 55%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #fcf8f8;
+  background-color: white;
 }
 .login-container{
   display: flex;
@@ -69,20 +75,21 @@ body{
   align-items: center;
 }
 .login-container input{
-  width: 200px;
-  height: 39px;
-  margin-bottom: 10px;
-  padding-left: 7px;
-  border: 1px solid #f9dfdf;
-  border-radius: 5px;
+  width: 220px;
+  height: 42px;
+  margin-bottom: 12px;
+  padding-left: 10px;
+  border: 1px solid #222831;
+  border-radius: 8px;
+  background-color: #fff;
 }
 .login-container button{
- height: 40px;
- width: 75px;
- background: #F1B4B4;
+ height: 42px;
+ width: 90px;
+ background: #222831;
  border: none;
- border-radius: 10px;
- font-family: "Geom",sans-serif;
+ border-radius: 12px;
+ font-family: "Bubbler One",sans-serif;
  font-size: 15px;
  color: white;
  margin-top: 15px;
@@ -100,13 +107,5 @@ body{
 }
 .right-section a{
   text-decoration: underline;
-  color:#F1B4B4;
-}
-
-.footer{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #778873;
-  color: #F1F3E0;
+  color: #222831;
 }

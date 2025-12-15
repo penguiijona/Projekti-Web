@@ -4,14 +4,21 @@
   box-sizing: border-box;
 }
 body{
-  font-family: "Geom", sans-serif;
-  height: 100vh;
+  font-family: "Bubbler One", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: gainsboro;
 }
 .wrapper{
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  height: 100vh;
+  width: 850px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.08);
+  margin-left: 50px;
+  margin-right: 50px;
 }
 .wrapper img{
   width: 50px;
@@ -21,15 +28,14 @@ body{
   text-align: center;
 }
 .left-section{
-  width: 40%;
-  height: 100vh;
-  color: #F1B4B4;
+  width: 45%;
+  color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 40px;
-  background: linear-gradient(to bottom, #fcf8f8 0%,#fbefef 50%,#f9dfdf 100%);
+  background: linear-gradient(to bottom, #222831 0%,#393e46 50%,#222831 100%);
 }
 .left-section img{
   transition: transform 0.25s ease;
@@ -40,14 +46,14 @@ body{
   cursor: pointer;
 }
 .right-section{
-  color: #F1B4B4;
-  width: 60%;
-  height: 100vh;
+  color:#222831;
+  width: 55%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #fcf8f8;
+  padding: 40px 20px;
+  background-color: white;
 }
 .right-section h2{
   width: 200px;
@@ -68,28 +74,27 @@ body{
   align-items: center;
 }
 .signup-container input{
-  display: flex;
-  flex-direction: column;
-  height: 39px;
-  width: 200px;
-  margin-bottom: 10px;
-  border-radius: 5px;
-  border: 1px solid #f9dfdf;
-  padding-left: 7px;
+  width: 220px;
+  height: 42px;
+  margin-bottom: 12px;
+  padding-left: 10px;
+  border: 1px solid #222831;
+  border-radius: 8px;
+  background-color: #fff;
 }
 .signup-container button{
-height: 40px;
- width: 75px;
- background: #F1B4B4;
- border: none;
- border-radius: 10px;
- font-family: "Geom",sans-serif;
- font-size: 15px;
- color: white;
- margin-top: 15px;
- margin-bottom: 20px;
- cursor: pointer;
- transition: transform 0.25s ease, opacity 0.2s;
+  height: 42px;
+  width: 90px;
+  background: #222831;
+  border: none;
+  border-radius: 12px;
+  font-family: "Bubbler One",sans-serif;
+  font-size: 15px;
+  color: white;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: transform 0.25s ease, opacity 0.2s;
 }
 .signup-container button:hover{
   transform: scale(1.06);
@@ -100,13 +105,5 @@ height: 40px;
   opacity: 0.5;
 }
 .right-section a{
-  color: #F1B4B4;
-}
-.footer{
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  background-color: #f9dfdf;
-  color: #F1B4B4;
+  color: #222831;
 }

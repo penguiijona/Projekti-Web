@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adoption Application</title>
+  <link rel="stylesheet" href="../Home/style.css"> 
+  <link rel="stylesheet" href="style.css"> 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bubbler+One&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <div class="left-section">
+      <img src="../Images/LightLogo.png" alt="PawPromise Logo">
+      <span class="header-title"><h3>PawPromise</h3></span>
+    </div>
+    <div class="right-section">
+      <a href="../LogIn/index.html">Log In</a>
+      <a href="../SignUp/index.html">Sign Up</a>
+    </div>
+  </header>
+
+  <div class="form-wrapper">
+    <h1>Adoption Application Form</h1>
+    <p class="subtitle">Complete the form below to begin the journey to adopting your new best friend.</p>
+
+    <section class="pet-profile-section">
+      <div class="pet-summary">
+          <img src="" alt="Pet's Photo" class="pet-form-image" id="pet-form-image">
+          <div class="summary-text">
+              <h2 id="pet-name-heading">Adopting: [Pet Name]</h2> 
+              <p class="pet-intro" id="pet-intro-text">Loading pet details...</p>
+          </div>
+      </div>
+      
+      <div class="pet-requirements">
+          <h3>Required Home Environment:</h3>
+          <div class="stat-grid-large" id="pet-stats-grid">
+              </div>
+
+          <div class="eligibility-check">
+              <input type="checkbox" id="eligible" class="simple-checkbox" required>
+              <label for="eligible">I confirm that after reading the pet's requirements, I am eligible to provide a suitable home for <span id="pet-name-agree"></span>.</label>
+          </div>
+      </div>
+    </section>
+
+    <form class="adoption-form" action="#" method="POST">
+      
+      <input type="hidden" id="pet-name-hidden" name="adoptingPet">
+
+      <section class="form-section">
+        <h2>1. Financial & Commitment Assessment</h2>
+        
+        <label for="income" class="form-label">Estimated Annual Household Income:</label>
+        <select id="income" name="annualIncome" class="simple-input" required>
+          <option value="">Select Income Range</option>
+          <option value="low">Under $40,000</option>
+          <option value="medium">$40,000 - $80,000</option>
+          <option value="high">$80,000+</option>
+        </select>
+
+        <label for="monthlySpend" class="form-label">Estimated Monthly Spend on Pet (Food, Toys, Vet, etc.):</label>
+        <input type="text" id="monthlySpend" name="monthlySpend" placeholder="$ minimum (e.g., 200)" class="simple-input" required>
+
+        <label for="vetBills" class="radio-label">Can you cover unexpected vet bills up to $1,000?</label>
+        <div class="radio-group">
+            <input type="radio" id="vetYes" name="vetCoverage" value="Yes" class="simple-radio" required>
+            <label for="vetYes">Yes</label>
+            <input type="radio" id="vetNo" name="vetCoverage" value="No" class="simple-radio">
+            <label for="vetNo">No</label>
+        </div>
+      </section>
+
+      <section class="form-section">
+        <h2>2. Personal Information</h2>
+        <div class="input-group">
+          <input type="text" name="firstName" placeholder="First Name" class="simple-input" required>
+          <input type="text" name="lastName" placeholder="Last Name" class="simple-input" required>
+        </div>
+        <input type="text" name="email" placeholder="Email Address" class="simple-input" required>
+        <input type="text" name="phone" placeholder="Phone Number" class="simple-input" required>
+      </section>
+      
+      <section class="form-section">
+        <h2>3. Residence Details</h2>
+        <input type="text" name="streetAddress" placeholder="Street Address" class="simple-input" required>
+        <div class="input-group">
+          <input type="text" name="city" placeholder="City" class="simple-input" required>
+          <input type="text" name="zipCode" placeholder="Zip/Postal Code" class="simple-input" required>
+        </div>
+        
+        <label for="housing" class="form-label">Housing Type:</label>
+        <select id="housing" name="housingType" class="simple-input" required>
+          <option value="">Select Housing Type</option>
+          <option value="house">House (Owned)</option>
+          <option value="apartment_rent">Apartment (Rented)</option>
+          <option value="house_rent">House (Rented)</option>
+          <option value="other">Other</option>
+        </select>
+
+        <label for="landlord" class="radio-label">Do you have landlord approval (if renting)?</label>
+        <div class="radio-group">
+            <input type="radio" id="landlordYes" name="landlordApproval" value="Yes" class="simple-radio" required>
+            <label for="landlordYes">Yes</label>
+            <input type="radio" id="landlordNo" name="landlordApproval" value="No" class="simple-radio">
+            <label for="landlordNo">No</label>
+        </div>
+      </section>
+
+      <section class="form-section commitment-section">
+        <h2>4. Adoption Agreement</h2>
+        
+        <div class="commitment-box">
+            <input type="checkbox" id="returnAgreement" class="simple-checkbox" required>
+            <label for="returnAgreement">I agree that if I can no longer care for this pet, I will return them directly to PawPromise and will <b>not</b> abandon them or transfer ownership without the organization's prior written consent.</label>
+        </div>
+      </section>
+
+      <button type="submit" class="submit-btn">Submit Application</button>
+      
+    </form>
+  </div>
+
+  <footer class="footer">
+    <p>© PawPromise . All Rights Reserved</p>
+  </footer>
+  <script src="formscript.js"></script> 
+</body>
+</html>

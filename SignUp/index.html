@@ -17,23 +17,35 @@
       <br>
       <p>Because hope starts with a loving home.</p>
     </div>
+    
     <div class="right-section">
       <img src="../Images/DarkLogo.png" alt="">
       <h2>Welcome to PawPromise!</h2>
       <div>
-        <form action="../LogIn/index.html" method="get" target="_blank" class="signup-container">
-          <input type="text" placeholder="Name" required>
-          <input type="text" placeholder="Surname" required>
-          <input type="email" placeholder="Email" required>
-          <input type="password" placeholder="Password">
-          <input type="password" placeholder="Confirm Password">
+        <form action="../LogIn/index.html" method="get" id="signup-form" class="signup-container"> 
+          
+          <input type="text" id="name" placeholder="Name">
+          <span id="name-error" class="error-message"></span>
+
+          <input type="text" id="surname" placeholder="Surname">
+          <span id="surname-error" class="error-message"></span>
+          
+          <input type="email" id="email" placeholder="Email">
+          <span id="email-error" class="error-message"></span>
+
+          <input type="password" id="password" placeholder="Password">
+          <span id="password-error" class="error-message"></span>
+
+          <input type="password" id="confirm-password" placeholder="Confirm Password">
+          <span id="confirm-password-error" class="error-message"></span>
   
-          <button>Sign Up</button>
+          <button type="submit">Sign Up</button>
         </form>
       </div>
       <p>Already have an account?<a href="../LogIn/index.html" target="_blank"> Log In </a></p>
     </div>
   </div>
 
+  <script src="signup.js"></script> 
 </body>
 </html>

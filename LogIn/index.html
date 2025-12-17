@@ -22,16 +22,21 @@
       <img src="../Images/DarkLogo.png" alt="green">
       <h2>Welcome back to PawPromise!</h2>
       <div>
-        <form action="../Home/index.html" method="get" target="_blank" class="login-container">
-          <input type="email" placeholder="Email" required>
-          <input type="password" placeholder="Password" required>
+        <form id="login-form" action="../Home/index.html" method="get" class="login-container" target="_blank"> 
+          
+          <input type="email" id="email" placeholder="Email">
+          <span id="email-error" class="error-message"></span>
   
-          <button>Log In</button>
+          <input type="password" id="password" placeholder="Password">
+          <span id="password-error" class="error-message"></span>
+  
+          <button type="submit">Log In</button>
         </form>
       </div>
       <p>Don't have an account yet?<a href="../SignUp/index.html" target="_blank"> Sign Up </a></p>
-    </div>
+  </div>
   </div>
 
+  <script src="login.js"></script>
 </body>
 </html>

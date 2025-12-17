@@ -1,0 +1,16 @@
+Shënim për Prof. Greta
+
+Ky projekt është realizuar në mënyrë
+individuale pas aprovimit tuaj për ndarjen nga grupi.
+Dëshiroj të sqaroj se repository e përbashkët është fshirë pas ndarjes,
+mirëpo unë kisha filluar punën individualisht në folder të veçantë më herët.
+
+
+Fakti që kam punuar paraprakisht në një "folder" ndaras, më ka mundësuar
+që pas ndarjes zyrtare, ta rishkruaj dhe ta përmirësoj kodin (me ndryshime në dizajn)
+brenda kohës në këtë repo të re.
+
+Linku i GitHub: https://github.com/penguiijona/Projekti-Web.git
+
+Me respekt, 
+Jona Sadiku G2

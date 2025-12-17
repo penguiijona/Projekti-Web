@@ -89,12 +89,6 @@ body{
   font-size: 1.05em;
 }
 
-.meet-max-layout{
-  display: flex;
-  gap: 20px;
-  align-items: flex-start;
-}
-
 .max-photos-container {
   display: flex;
   flex-direction: column;
